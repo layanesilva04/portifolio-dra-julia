@@ -51,6 +51,7 @@ header > button{
 @media(max-width: 768px){
     header > button{
         margin-top: 40px;
+        margin-left: 20px;
     }
 }
 button {
