@@ -1,0 +1,159 @@
+@charset "UTF-8";
+:root{
+    --cor1:#EADDCC;
+    --cor2:#291C07;
+    --cor3:#BB9469;
+    --cor4:#8C7961;
+
+}
+*{
+    margin: 0px; /*para facilitar na hora de configurar*/
+    padding: 0px; /*para facilitar na hora de configurar*/
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+    background-color: var(--cor1);
+    background-attachment: fixed; /*fixa o fundo (efeito paralax)*/
+    font-family: 'Playfair Display', serif;
+}
+header{
+    background-image: url(imagens\ dra/photo-output.jpeg);
+    background-position: bottom right;
+    background-size: cover;
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.278); /*cria uma sombra tipo caixa*/
+    height: 400px;
+}
+header > h1{
+    padding-top: 40px; /*espaço em cima*/
+    padding-left: 20px; /*espaço lado esquerdo*/
+    font-variant: small-caps; /*letra maiuscula*/
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.634);
+    color: var(--cor2);
+    font-size: 2.2em;
+}
+header > p{
+    padding-left: 60px;
+    margin-top: 15px; /*espaço entre o h1 e o paragrafo*/
+    text-align: justify;
+    text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.462);
+    color: var(--cor2);
+    font-size: 1.2em;
+}
+header > img{
+    height: 100%;
+    width: 30%;
+}
+header > button{
+    margin-left: 80px;
+    margin-top: 150px;
+}
+button {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+button:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+a{
+    color: var(--cor2);
+}
+a:hover{
+    color: var(--cor1);
+}
+div{
+    padding-top: 10vh; /*confuguraçao para todas divs em geral*/
+    padding-bottom: 10vh;
+    line-height: 1.5em; /*espaço entre as linhas dos paragrafos*/
+}
+div#sobre{
+    color: var(--cor2);
+    text-align: center;
+    margin: 10px;
+    font-size: 1.1em;
+}
+div#sobre > h2{
+    padding-bottom: 20px;
+    font-size: 1.8em;
+}
+div#diferenciais{
+    background-color: var(--cor4);
+    color: var(--cor2);
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.278);
+    padding-left: 40px;
+    border-radius: 50px;
+    margin: 20px;
+}
+div#diferenciais > ul {
+    width: fit-content;/*alinha o texto com as bolinhas*/
+    margin:5% auto ;
+    text-align: center, ;
+    list-style-position: inside;
+    font-size: 1.1em;
+}
+div#diferenciais > h2{
+    text-align: center;
+    font-size: 1.8em;
+}
+div#feedback{
+    text-align: center;
+    display:flex ;
+    color: var(--cor2);
+    overflow: auto;
+    font-size:1.1em ;
+}
+div#feedback > h2{
+    padding-bottom: 20px;
+    text-align: center;
+}
+#paciente{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.278);
+    transition: transform 0.3s ease;/*animaçao para fazer o card crescer*/
+}
+#paciente:hover{
+    transform: scale(1.05);
+}
+div#feedback1 > h2{
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--cor2);
+    font-size: 2em;
+}
+div#feedback1 >p{
+    text-align: center;
+    color: var(--cor2);
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+footer{
+    background-color: var(--cor3);
+    color: var(--cor2);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.278);
+}
+footer> h3{
+    padding-bottom: 15px;
+    font-size: 1.4em;
+}
+h3#frase{
+    background-color: var(--cor2);
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.278);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: var(--cor1);
+    font-size: 1.5em;
+}
